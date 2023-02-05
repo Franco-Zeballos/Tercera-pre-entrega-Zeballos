@@ -1,0 +1,30 @@
+{% extends "AppCoder/PADRE.html" %}
+
+{% block titulo %}
+SUME UN PROFESOR
+{% endblock %}
+{% block subtitulo %}
+RELLENE LOS SIGUIENTES CAMPOS
+{% endblock %}
+
+
+
+
+
+{% block descripcion %}
+
+    
+    <form action="" method="POST"> {%csrf_token%}
+
+        <table>
+            {{form2.as_table}}
+
+
+        </table>
+
+        <input type="submit" value="Confirmar">
+
+    </form>
+
+{% endblock %}    
+
